@@ -1,25 +1,35 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, { useState } from 'react';
+
 import './App.css';
+import MyLibraryTitle from './Atoms/MyLibraryTitle/MyLibraryTitle';
+import { AppBar } from '@mui/material';
+import AppBarWithCategories from './Organisms/AppBarWithCategories/AppBarWithCategories';
+import MyAppBar from './Organisms/AppBar/MyAppBar';
+import BookCard from './Molecules/BookCard/BookCard';
+import GridOfBooks from './Organisms/GridOfBooks/GridOfBooks';
+import MySearchBar from './Molecules/MySearchBar/MySearchBar';
+import { SearchOrganism } from './Organisms/SearchOrganism/SearchOrganism';
+import { SetUpKindle } from './Organisms/MyModal/SetUpKindle';
+import { SentKindle } from './Organisms/MyModal/SentKindle';
+import BookDetail from './Organisms/Bookdetail/Bookdetail';
 
 function App() {
+
+ 
+   
+ 
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+
+ <BookDetail bookName='The Grid' author='Matt Watkinson' caption='The Decision making tool for every business' image="grid.png" readTime='12-minute read' /> 
+
+
+
+
+
+   
+     
+    </>
   );
 }
 
